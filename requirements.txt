@@ -1,0 +1,9 @@
+anndata==0.10.8
+h5py==3.14.0
+numpy==1.26.4
+pandas==2.3.3
+scanpy==1.10.2
+scikit-learn==1.5.1
+scipy==1.13.1
+rpy2==3.5.12
+torch==2.4.1

@@ -15,8 +15,7 @@
 └── README.md
 ```
 
-Keep the seven Python files together. Prepare input data locally; output
-directories are created automatically. Built-in defaults require no JSON file.
+Prepare input data locally; output directories are created automatically. 
 
 ## Usage
 
@@ -86,28 +85,6 @@ python main_tri.py \
   --output-dir saved_results/trimodal
 ```
 
-Alternatively, use precomputed tri-modal PCA coordinates:
-
-```bash
-python main_tri.py --pcas data/trimodal_pcas.npz \
-  --n-clusters 4 --device cpu --seed 0 \
-  --output-dir saved_results/trimodal_pca
-```
-
-Set `--n-clusters` to the reference-class count for your data; example counts
-are not automatically inferred biological results. Only mclust is supported,
-with a fixed component count and default BIC-based covariance-model selection.
-
-To infer the count and report ARI/NMI/AMI/ACC, use `--label-key cell_type`
-with an RNA `obs['cell_type']` column. For tri-modal PCA input, also supply
-`--labels data/reference.csv`, containing `cell_id` and `cell_type` columns
-for exactly the same cells. If `--n-clusters` is also supplied, the counts must
-agree. Reference labels affect the downstream count and evaluation, but never
-model training or graph refinement.
-
-Use a new or empty output directory for every run. Training starts from
-initialization; interrupted runs cannot be resumed.
-
 #### Optional configuration
 
 Common options include `--latent-dim`, `--graph-neighbors`, `--pca-dim`,
@@ -168,8 +145,3 @@ z, diagnostics, model = run_gatoranchor_tri(
 )
 labels = cluster_mclust(z, k=4, seed=0)
 ```
-
-API clustering returns zero-based labels; CLI outputs use one-based labels.
-The paired API returns results in memory; the tri-modal API also saves training
-artifacts. Use the CLI to save the complete result set, including cluster tables.
-

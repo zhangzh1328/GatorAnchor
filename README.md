@@ -114,10 +114,6 @@ Embedding/cluster filenames start with `GatorAnchor` for paired runs and
 `GatorAnchorTri` for tri-modal runs. Tri-modal `artifacts/` additionally stores
 cell IDs, graphs, per-edge evidence, training history and the final embedding.
 
-The historical ALTRA Figure 9 uses a selected weighted Leiden partition and
-specific preprocessing. These mclust workflows do not reproduce its partition
-or reported metrics.
-
 ## Python API
 
 Dual-modal integration:

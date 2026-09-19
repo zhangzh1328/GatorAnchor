@@ -12,8 +12,8 @@ The public data sources for the ten benchmark datasets in Table 1 and the ALTRA 
 | GSE194122 s4d8 | RNA + ATAC | [GEO: GSE194122](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE194122) |
 | GSE201402 | RNA + ATAC | [GEO: GSE201402](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE201402) |
 | PBMC unsorted 3k | RNA + ATAC | [10x Genomics: PBMCs, no cell sorting, 3k](https://www.10xgenomics.com/datasets/pbmc-from-a-healthy-donor-no-cell-sorting-3-k-1-standard-2-0-0) |
-| GSE156478 Stim | RNA + ATAC | [GEO: GSE166188](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE166188) |
+| GSE156478 Stim | RNA + ATAC | [GEO: GSE156478 (SuperSeries)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156478); [GSE166188 (DOGMA-seq SubSeries)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE166188) |
 | Brain SNARE | RNA + ATAC | [GEO: GSE126074](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE126074) |
-| ALTRA TEA-seq | RNA + ATAC + ADT | [Allen Institute HISE](https://apps.allenimmunology.org/aifi/insights/ra-progression/downloads/tea-seq/); [DOI: 10.57785/c0pq-s567](https://doi.org/10.57785/c0pq-s567) |
+| ALTRA TEA-seq | RNA + ATAC + ADT | [Allen Institute HISE](https://apps.allenimmunology.org/aifi/insights/ra-progression/downloads/tea-seq/) |
 
 For GSE194122, the `s3d6` RNA+ADT subset corresponds to the CITE-seq processed data (`GSE194122_openproblems_neurips2021_cite_BMMC_processed.h5ad.gz`), whereas the `s4d8` RNA+ATAC subset corresponds to the Multiome processed data (`GSE194122_openproblems_neurips2021_multiome_BMMC_processed.h5ad.gz`). Both files are listed in the linked GEO series record.

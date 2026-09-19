@@ -40,7 +40,7 @@ Provide one `.h5ad` file per modality:
 - All files must contain the same cells with unique `adata.obs_names`; ATAC/ADT
   are automatically reordered to match RNA.
 - `adata.X` must contain finite, non-negative counts, with a positive total per
-  cell and at least two features per modality. Do not supply DSB, CLR or scaled values.
+  cell and at least two features per modality.
 - Input requires at least three cells; default neighbourhood settings require
   more than 30 cells.
 

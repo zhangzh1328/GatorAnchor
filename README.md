@@ -41,8 +41,7 @@ Provide one `.h5ad` file per modality:
   are automatically reordered to match RNA.
 - `adata.X` must contain finite, non-negative counts, with a positive total per
   cell and at least two features per modality.
-- Input requires at least three cells; default neighbourhood settings require
-  more than 30 cells.
+- Input requires at least three cells.
 
 Count inputs undergo normalization to 10,000 per cell, `log1p`, feature selection
 (RNA: 4,000; ATAC: 5,000; all ADTs), scaling and separate PCA (up to 30 dimensions).

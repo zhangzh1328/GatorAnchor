@@ -20,7 +20,7 @@ GATORANCHOR_CONFIG.update(
     logvar_initialization="default",
 )
 TRAINING_DEFAULTS = dict(
-    dz=128, k_graph=30, hops=1, epochs_pre=500, epochs_ref=250,
+    dz=128, k_graph=15, hops=1, epochs_pre=500, epochs_ref=250,
     lr=1e-3, beta=1e-5, T=1.0,
 )
 MODALITY_ORDER = ("RNA", "ATAC", "ADT")

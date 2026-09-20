@@ -408,7 +408,7 @@ def _evidence_fusion(
 def precompute(
     ds,
     cache,
-    k_graph=30,
+    k_graph=15,
     pca_dim=30,
     n_hvg_rna=4000,
     n_hvg_atac=5000,
@@ -448,7 +448,7 @@ def run_gatoranchor(
     device="cuda:0",
     cache=None,
     dz=128,
-    k_graph=30,
+    k_graph=15,
     hops=1,
     pca_dim=30,
     n_hvg_rna=4000,

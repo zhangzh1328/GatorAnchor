@@ -70,7 +70,7 @@ def _load_configuration(path: str | None) -> dict:
         "model": dict(GATORANCHOR_CONFIG),
         "training": {
             "latent_dim": 128,
-            "graph_neighbors": 30,
+            "graph_neighbors": 15,
             "propagation_order": 1,
             "pca_dim": 30,
             "rna_features": 4000,
